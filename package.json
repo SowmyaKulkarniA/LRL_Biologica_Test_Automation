@@ -1,0 +1,25 @@
+{
+   "name": "cypressauto",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "test": "npx cypress open",
+      "cypress": "./node_modules/.bin/cypress open",
+      "Triager": "./node_modules/.bin/cypress-tags run -e TAGS='@Tri'"
+   },
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+      "cypress": "^8.5.0",
+      "cypress-cucumber-preprocessor": "^4.3.0",
+      "cypress-file-upload": "^5.0.8",
+      "cypress-grep": "^2.13.1"
+   },
+   "cypress-cucumber-preprocessor": {
+      "nonGlobalStepDefinitions": true
+   },
+   "dependencies": {
+      "puppeteer": "^14.2.0"
+   }
+}

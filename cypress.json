@@ -1,0 +1,10 @@
+{
+
+    "chromeWebSecurity": false,
+
+
+   "testFiles": "**/*.feature",
+
+   "ignoreTestFiles": "**/*.js"
+
+}
