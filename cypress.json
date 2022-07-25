@@ -5,6 +5,9 @@
 
    "testFiles": "**/*.feature",
 
-   "ignoreTestFiles": "**/*.js"
+   "ignoreTestFiles": "**/*.js",
+
+   "baseUrl": "https://biologica-qa.am.lilly.com/home"
+
 
 }

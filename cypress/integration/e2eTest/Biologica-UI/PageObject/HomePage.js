@@ -5,7 +5,10 @@ class HomePage{
 
     Open() {
 
-       cy.visit('https://biologica-qa.am.lilly.com/')
+    
+      // cy.intercept("https://biologica-qa.am.lilly.com").as("Pagewait")
+       cy.visit('/');
+       //wait("@Pagewait")
 
     }
 
