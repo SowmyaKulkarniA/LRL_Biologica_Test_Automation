@@ -8,13 +8,33 @@ import { Then } from "cypress-cucumber-preprocessor/steps";
 import TriagerPage from "../PageObject/TriagerPage"
 import HomePage from "../PageObject/HomePage"
 
+const options = {
 
-//const Home = new HomePage()
+
+    username: "dash_swetapadma@lilly.com",
+    password: "Alliswell@123",
+
+    appUrl: "https://biologica-qa.am.lilly.com/",
+};
+before(function () {
+
+    cy.task("LcciLogin", options);
+    cy.wait(10000);
+});
+
+beforeEach(() => {
+
+    Cypress.Cookies.preserveOnce("lilly.id");
+})
+
+
+
 
 Given('Navigate to Biologica', () => {
 
     HomePage.Open()
-    cy.wait(12000)
+    cy.wait(5000)
+   
 
 })
 
@@ -160,7 +180,12 @@ Then('Click on "Run"', () => {
 
 And('Verify if session created successfully', () => {
 
-    TriagerPage.SessionName.should('eq', 'QA Test')
+    TriagerPage.SessionName.should('have.text', 'QA Test')
+})
+
+And('Auto refresh should be enabled', () => {
+
+
 
 })
 

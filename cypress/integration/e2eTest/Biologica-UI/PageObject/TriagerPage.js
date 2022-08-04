@@ -52,7 +52,7 @@ class TriagerPage {
 
    get NGSProject() {
 
-      return cy.get('[data-testid="MuiDataTableBodyCell-0-0"]').last()
+      return cy.get('[id="QA2020_test2"]')
 
    }
    get NGSProject() {

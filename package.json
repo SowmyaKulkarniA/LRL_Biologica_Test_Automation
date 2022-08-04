@@ -6,12 +6,13 @@
    "scripts": {
       "test": "npx cypress open",
       "cypress": "./node_modules/.bin/cypress open",
-      "Triager": "./node_modules/.bin/cypress-tags run -e TAGS='@Tri'"
+      "Triager": "./node_modules/.bin/cypress-tags run -e TAGS='@Tri'",
+      "cypress_open": "HTTP_PROXY=http://process.env.USER:process.env.PWD@proxy.gtm.lilly.com:9000 ./node_modules/.bin/cypress open"
    },
    "author": "",
    "license": "ISC",
    "devDependencies": {
-      "cypress": "^8.5.0",
+      "cypress": "^9.6.0",
       "cypress-cucumber-preprocessor": "^4.3.0",
       "cypress-file-upload": "^5.0.8",
       "cypress-grep": "^2.13.1"
