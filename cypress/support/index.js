@@ -14,8 +14,17 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
+
 import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+
+
+/*before(function (){
+
+    cy.task("LcciLogin", options);
+    cy.wait(10000);
+});*/
 
