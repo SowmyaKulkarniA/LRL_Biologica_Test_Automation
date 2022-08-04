@@ -55,6 +55,11 @@ class TriagerPage {
       return cy.get('[data-testid="MuiDataTableBodyCell-0-0"]').last()
 
    }
+   get NGSProject() {
+
+      return cy.get('[id="QA2020_test2"]')
+
+   }
 
    get Project() {
 
@@ -101,12 +106,12 @@ class TriagerPage {
       return cy.get('[id="Abeta mAb-aEGFR91.1 "]')
    }
 
-   get HarvestaEGFR91_1(){
+   get HarvestaEGFR91_1() {
 
       return cy.get('[id="QA2020_test2-aEGFR91.1 "]')
    }
 
-   get HarvestaLILR14_1(){
+   get HarvestaLILR14_1() {
 
       return cy.get('[id="QA2020_test2-aLILR14.1 "]')
    }
@@ -126,7 +131,7 @@ class TriagerPage {
    get SessionName() {
 
       return cy.get('[data-testid="MuiDataTableBodyCell-1-0"]').first()
-  }
+   }
 
 }
 

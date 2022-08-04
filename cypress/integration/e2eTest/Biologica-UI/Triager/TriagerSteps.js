@@ -48,7 +48,7 @@ Then('Validate the Triager Page', () => {
 
 When('Navigate to Create New Triager Session', () => {
 
-cy.log
+    cy.log
 
 })
 
@@ -116,7 +116,7 @@ And('Select a Assay project', () => {
 
 And('Click on "Get harvests"', () => {
 
- TriagerPage.HarvestButton.click()
+    TriagerPage.HarvestButton.click()
 
 })
 
@@ -144,11 +144,10 @@ And('Navigate to "Select NGS Experiments" and Select two Project', () => {
 
 })
 
-And('Provide Session name in the "Session Name:" check boxheck box', () => {
+And('Provide Session name in the "Session Name:" check box', () => {
 
     TriagerPage.SessionNameBox.clear().type('QA Test')
     cy.wait(5000)
-
 
 })
 

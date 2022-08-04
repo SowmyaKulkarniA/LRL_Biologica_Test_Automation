@@ -1,4 +1,4 @@
-
+/*
 import TriagerPage from "../PageObject/TriagerPage"
 import HomePage from "../PageObject/HomePage"
 describe('Test Demo', () => {
@@ -38,7 +38,7 @@ describe('Test Demo', () => {
 
 
 
-    })
+    //})
 
 
-})
+//})
